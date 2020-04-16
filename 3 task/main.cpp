@@ -21,13 +21,16 @@ int main()
     ans=0;
     index=0;
     while (not R.empty()){
+        vector<lesson> RTime;
         A[index]=min;
         index++;
+        RTime = R;
         for (int i=0; i<n; i++){
             if (R[i].start < min.start && R[i].start < min.end) {
-                R.erase(R.begin() + i);}
+                RTime.erase(RTime.begin() + i);}
         }
-        n=R.size();
+        R = RTime
+        cout << R.size();
     }
     cout << A.size();
 }
