@@ -34,5 +34,6 @@ int main()
         if (R.size()==Rstart.size()) break;
 
     }
+    cout << ans;
 }
-cout << ans;
+
