@@ -27,7 +27,6 @@ int main()
             if (R[i].start < min.start && R[i].start < min.end) {
                 R.erase(R.begin() + i);}
         }
-        cout << R.size();
     }
     cout << A.size();
 }
